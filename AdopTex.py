@@ -997,7 +997,7 @@ if menu_option == "Simulation Result":
     st.markdown(
         """
         <p class="justify-text">
-            <b>AdopTex</b> is a business analytics tool integrated with data-driven Python system dynamics, machine learning, and AI to assess the potential adoption of Lithium Motorcycle Starter Pack Accumulators in Indonesia. 
+            <b>AdopTex</b> is a economic analytics tool integrated with data-driven Python system dynamics, machine learning, and AI to assess the potential adoption of Lithium Motorcycle Starter Pack Accumulators in Indonesia. 
             Below are the full simulation results for the financial and market parameters.
         </p>
         """,
