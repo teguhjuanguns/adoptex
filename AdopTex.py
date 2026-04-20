@@ -628,7 +628,7 @@ if menu_option == "Simulation Result":
             c1, c2 = st.columns([1, 1.5])
             with c1:
                 st.markdown("**Data Table**")
-                st.dataframe(df.style.set_properties(**{'text-align': 'center'}), height=250, use_container_width=True, hide_index=True)
+                st.dataframe(df, height=250, use_container_width=True, hide_index=True)
             with c2:
                 st.markdown("**Trend Chart**")
                 st.line_chart(chart_df, height=250)
@@ -719,7 +719,7 @@ elif menu_option == "Sensitivity Analysis":
         ]
         
         st.markdown(f"**{metric_label} Data Table**")
-        st.dataframe(df_table.style.format("{:.2f}").set_properties(**{'text-align': 'center'}), use_container_width=True)
+        st.dataframe(df_table, use_container_width=True, hide_index=True)
         
         st.markdown(f"**{metric_label} Trend Chart**")
         fig, ax = plt.subplots(figsize=(10, 6))
