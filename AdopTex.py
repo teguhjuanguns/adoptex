@@ -46,43 +46,6 @@ def add_bg_from_url():
 
 add_bg_from_url() 
 
-# -----------------------------------------------------------------------------
-# Section: Read Parameter Tables from Google Sheets
-# -----------------------------------------------------------------------------
-
-# -*- coding: utf-8 -*-
-
-import time
-import warnings
-from pathlib import Path
-import numpy as np
-import pandas as pd
-from functools import reduce
-from statsforecast import StatsForecast
-from statsforecast.models import ARIMA as SF_ARIMA
-from statsmodels.tsa.arima.model import ARIMA
-from statsmodels.stats.diagnostic import acorr_ljungbox
-import statsmodels.api as sm
-import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
-from matplotlib.ticker import FuncFormatter
-import streamlit as st
-import sys
-import plotly.express as px
-import plotly.graph_objects as go
-import streamlit.components.v1 as components
-import json
-from urllib.parse import quote_plus
-
-
-# (opsional) matikan warning di awal
-warnings.filterwarnings("ignore")
-
-import BPTK_Py
-from BPTK_Py import Model
-from BPTK_Py import sd_functions as sd
-
-
 @st.cache_data(ttl=6 * 3600, show_spinner=False)
 def add_bg_from_url():
     st.markdown(
