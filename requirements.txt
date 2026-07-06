@@ -8,3 +8,4 @@ plotly
 BPTK_Py
 packaging
 jinja2>=3.1.0
+setuptools
