@@ -745,15 +745,11 @@ elif menu_option == "Concept Foundation":
     concept_data = {
         "Concept / Methodology": [
             "Techno-Economic Analysis",
-            "WTP Probability (Probit Analysis)",
-            "ML of WTP Probability Prediction",
-            "Total Cost Ownership"
+            "BPTK-Py",
         ],
         "Reference Link": [
             "https://www.mdpi.com/2227-7080/6/3/73",
-            "https://books.google.co.id/books/about/Probit_Analysis.html?id=Eu2pPwAACAAJ&redir_esc=y",
-            "https://jbhender.github.io/Stats506/F18/GP/Group14.html",
-            "https://josi.ft.unand.ac.id/index.php/josi/article/view/78"
+            "https://bptk.transentis.com/",
         ]
     }
     
